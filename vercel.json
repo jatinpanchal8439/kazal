@@ -1,18 +1,12 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "outputDirectory": "dist/client",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
   "functions": {
     "dist/server/index.js": {
-      "runtime": "@vercel/node"
+      "runtime": "nodejs18.x"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/dist/server/index.js"
-    }
-  ]
+  }
 }
