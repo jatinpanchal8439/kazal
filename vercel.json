@@ -1,19 +1,7 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/client",
+  "outputDirectory": "dist",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": "vite",
-  "functions": {
-    "dist/server/index.js": {
-      "runtime": "nodejs18.x",
-      "maxDuration": 10
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/dist/server/index.js"
-    }
-  ]
+  "framework": "vite"
 }
