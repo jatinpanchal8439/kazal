@@ -6,7 +6,7 @@
   "framework": "vite",
   "functions": {
     "dist/server/index.js": {
-      "runtime": "@vercel/node"
+      "runtime": "@vercel"
     }
   },
   "rewrites": [
